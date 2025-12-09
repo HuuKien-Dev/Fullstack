@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+  </head>
+  <body>
+    <h2>Câu 1: Tạo form Đăng ký tài khoản</h2>
+    <p>
+      <strong>Yêu cầu: </strong>Tạo form <b>Đăng ký tài khoản </b>như bên dưới.
+    </p>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      method="GET"
+      target="_blank"
+      autocomplete="on"
+    >
+      <label for="fullName">Họ tên: </label>
+      <br />
+      <input type="text" id="fullName" name="Ten" placeholder="Ví dụ: levana" />
+      <br />
+      <label for="Email">Email: </label>
+      <br />
+      <input
+        type="email"
+        id="Email"
+        name="Email"
+        placeholder="Ví dụ: lavana@gmail.com"
+      />
+      <br />
+      <label for="password">Mật khẩu: </label>
+      <br />
+      <input type="password" id="password" name="Password" />
+      <br /><br />
+      <button type="submit">Đăng ký</button>
+    </form>
+    <h2>Câu 2: Tạo form Đăng ký chi tiết</h2>
+    <p>
+      <strong>Yêu cầu: </strong>Tạo form <b>Đăng ký chi tiết </b>như bên dưới.
+    </p>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      target="_blank"
+      autocomplete="on"
+    >
+      <label for="Name">Họ tên:</label>
+      <br />
+      <input type="text" name="Fullname" id="Name" />
+      <br />
+      <label for="mail">Email: </label>
+      <br />
+      <input type="email" name="Email" id="mail" />
+      <br />
+      <label for="pw">Mật khẩu: </label>
+      <br />
+      <input type="password" name="password" id="pw" />
+      <br />
+      <label for="cf_password">Xác nhận mật khẩu: </label>
+      <br />
+      <input type="password" id="cf_password" name="Confirm_password" />
+      <p>Giới tính:</p>
+      <input type="radio" name="gender" id="male" value="Nam" />
+      <label for="male">Nam</label>
+      <br />
+      <input type="radio" name="gender" id="fmale" value="Nữ" />
+      <label for="fmale">Nữ</label>
+      <br />
+      <input type="radio" name="gender" id="other" value="Khác" />
+      <label for="other">Khác</label>
+      <p>Quốc gia:</p>
+      <select name="country" id="country">
+        <option value="vn">Việt Nam</option>
+        <option value="tl">Thái Lan</option>
+        <option value="jp">Nhật Bản</option>
+      </select>
+      <br /><br />
+      <button type="submit">Đăng ký</button>
+    </form>
+    <h2>Câu 3: Tạo form Đánh giá sản phẩm</h2>
+    <p>
+      <strong>Yêu cầu: </strong>Tạo form <b>Đánh giá sản phẩm như bên dưới.</b>
+    </p>
+    <label for="productName">Tên sản phẩm: </label>
+    <br />
+    <input type="text" id="productName" name="productName" />
+    <p>Đánh giá:</p>
+    <input type="radio" name="rating" id="5star" name="5star" />
+    <label for="5star">5 sao</label>
+    <br />
+    <input type="radio" name="rating" id="4star" name="4star" />
+    <label for="4star">4 sao</label>
+    <br />
+    <input type="radio" name="rating" id="3star" name="3star" />
+    <label for="3star">3 sao</label>
+    <br />
+    <input type="radio" name="rating" id="2star" name="2star" />
+    <label for="2star">2 sao</label>
+    <br />
+    <input type="radio" name="rating" id="1star" name="1star" />
+    <label for="1star">1 sao</label>
+    <br />
+    <label for="comment">Bình luận:</label>
+    <br />
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+    <br /><br />
+    <button type="submit">Gửi đánh giá</button>
+    <h2>Câu 4: Tạo form Liên hệ</h2>
+    <p><strong>Yêu cầu: </strong>Tạo form <b>Liên hệ </b>như bên dưới.</p>
+    <form>
+      <label for="NAME">Họ và tên: </label>
+      <br />
+      <input type="text" id="NAME" name="NAME" />
+      <br />
+      <label for="EMAIL">Email: </label>
+      <br />
+      <input type="email" id="EMAIL" name="EMAIL" />
+      <br />
+      <label for="content">Nội dung tin nhắn: </label>
+      <br />
+      <textarea id="content"></textarea>
+      <br /><br />
+      <button type="submit">Gửi tin nhắn</button>
+    </form>
+    <h2>Câu 5: Tạo form Đặt phòng khách sạn</h2>
+    <p>
+      <strong>Yêu cầu: </strong>Tạo form <b>Đặt phòng khách sạn </b>như bên
+      dưới.
+    </p>
+    <form>
+      <label for="full_name">Họ và tên: </label>
+      <br />
+      <input type="text" id="full_name" name="full_name" />
+      <br />
+      <label for="e_mail">Email: </label>
+      <br />
+      <input type="email" id="e_mail" name="e_mail" />
+      <br />
+      <label for="check_in">Ngày nhận phòng: </label>
+      <br />
+      <input type="date" id="check_in" name="check_in" />
+      <br />
+      <label for="check_out">Ngày trả phòng: </label>
+      <br />
+      <input type="date" id="check_out" name="check_out" />
+      <br />
+      <label for="room_type">Loại phòng: </label>
+      <br />
+      <select name="room_type" id="room_type">
+        <option value="single">Phòng đơn</option>
+        <option value="double">Phòng đôi</option>
+        <option value="suite">Phòng suite</option>
+      </select>
+      <br />
+      <label for="special_requests">Yêu cầu đặc biệt: </label>
+      <br />
+      <textarea
+        id="special_requests"
+        name="special_requests"
+        rows="4"
+        cols="50"
+      ></textarea>
+      <br /><br />
+      <button type="submit">Đặt phòng</button>
+    </form>
+    <h2>Câu 6: Tạo form Tìm kiếm</h2>
+    <p><strong>Yêu cầu: </strong>Tạo form <b>Tìm kiếm </b>như bên dưới.</p>
+    <form>
+      <input type="text" name="search_query" placeholder="Nhập từ khóa..." />
+      <button type="submit">Tìm kiếm</button>
+  </body>
+</html>
