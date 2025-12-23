@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      span {
+        background-color: yellow;
+        border: 2px solid red;
+      }
+      .inline {
+        display: inline;
+        width: 3000px;
+        height: 500px;
+        margin-top: 400px;
+        margin-bottom: 400px;
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+        padding-left: 50px;
+        padding-right: 50px;
+        /* padding là phần cách ra có màu vàng */
+        margin-left: 20px;
+        margin-right: 20px;
+        /* margin là phần cách ra có màu trắng  */
+      }
+      /* 
+      - display: inline là giá trị mặc định
+      - Phần tử có kiểu inline sẽ ở cùng 1 hàng với các phần tử khác
+      - Chiều rộng và chiều cao sẽ không được áp dụng 
+      - Không thêm được margin  cho top và bottom
+      - Nếu thêm padding cho top và bottom nó sẽ đè phần từ phía trên phía dưới
+      */
+      .block {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-top: 30px;
+        /* margin-bottom: 30px;
+        margin-left: 50px; */
+        margin-right: 300px;
+        padding-top: 50px;
+        /* padding-bottom: 50px; */
+        /* padding-left: 200px; */
+        padding-right: 100px;
+      }
+      /* 
+      -kiểu hiển thị block sẽ chiếm toàn bộ chiều ngang của 1 hàng
+      - có thể thêm chiều rộng và chiều cao
+      - cho phép thêm margin và padding cho tất cả các phía
+      */
+      .inline-block {
+        display: inline-block;
+        width: 50px;
+        height: 60px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+        padding-left: 50px;
+        padding-right: 50px;
+        /* padding là phần cách ra có màu vàng */
+        margin-left: 20px;
+        margin-right: 20px;
+        /* margin là phần cách ra có màu trắng  */
+      }
+      /* 
+      - display: inline-block kết hợp giữa inline và block
+      - phần tử sẽ nằm cùng 1 hàng với các phần tử khác
+      - có thể thêm chiều rộng và chiều cao
+      - cho phép thêm margin và padding cho tất cả các phía
+      */
+      .display-none {
+        display: none;
+      }
+      /* 
+      - Ẩn phần tử khỏi giao diện người dùng
+      */
+    </style>
+
+    <h2>1. display: inline;</h2>
+    <p>
+      Xin chào <span class="inline">Nguyen Huu Kien </span> Bạn có khỏe không?
+    </p>
+
+    <h2>2. display: block;</h2>
+    <p>
+      Xin chào <span class="block">Nguyen Huu Kien </span> Bạn có khỏe không?
+    </p>
+
+    <h2>3. display: inline-block;</h2>
+    <p>
+      Xin chào <span class="inline-block">Nguyen Huu Kien </span> Bạn có khỏe
+      không?
+    </p>
+
+    <h2>4. display: none;</h2>
+    <p>
+      Xin chào <span class="display-none">Nguyen Huu Kien </span> Bạn có khỏe
+      không?
+    </p>
+  </body>
+</html>
