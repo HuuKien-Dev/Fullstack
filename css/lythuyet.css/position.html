@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">header</header>
+    <style>
+      .header {
+        height: 100px;
+        width: 100%;
+        background-color: red;
+        /* position: fixed; */
+        position: sticky;
+        top: 0;
+        padding: 20px;
+        margin-bottom: auto;
+      }
+      *box {
+        box-sizing: border-box;
+      }
+      .box {
+        background-color: green;
+        border: 5px solid red;
+        display: inline-block;
+        padding: 50px;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 200px;
+      }
+      .box-1 {
+        position: static;
+        top: 20px;
+        left: 20px;
+        /* khối 1 không thay đổi so với vị trí ban đầu vị position là static */
+      }
+      .box-2 {
+        top: 50px;
+        position: relative;
+        right: 30px;
+      }
+      .box-4 {
+        width: 300px;
+        height: 250px;
+        background-color: blue;
+        position: relative;
+        margin-top: 100px;
+      }
+      .box-5 {
+        width: 150px;
+        height: 100px;
+        background-color: yellow;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      /* 
+      - mặc định các phần tử có giá trị position là static
+      - relative sẽ so sánh với vị trí ban đầu của chính nó 
+      -absolute sẽ so sánh với phần tử cha gần nhất có position khác static
+      + điều kiện bắt buộc thuộc tính của cha phải là relative, absolute, fixed hoặc sticky
+      - nếu không có phần tử cha nào có position khác static thì sẽ so sánh với thẻ html
+      -fixed luôn cố định vị trí so với cửa sổ trình duyệt
+       */
+      .button-contact {
+        display: inline-block;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        padding: 15px 25px;
+        background-color: orange;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 70%;
+      }
+    </style>
+    <div class="box box-1">Box1</div>
+    <div class="box box-2">Box2</div>
+    <div class="box">Box3</div>
+    <h2 style="margin-top: 50px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae
+      exercitationem eveniet quam alias iure veniam tempora saepe nulla nobis
+      eligendi repudiandae molestias ex doloribus, quasi corrupti dicta?
+      Voluptate, autem. Eaque odio dicta voluptates accusamus perspiciatis ad
+      hic earum aut totam minima ea quaerat impedit deserunt necessitatibus,
+      laborum vero magni assumenda! Doloribus nisi eius aspernatur voluptate est
+      ex, maiores sapiente? Corporis quos, placeat ad repudiandae molestias
+      assumenda exercitationem et dolore voluptas temporibus obcaecati dolores
+      vero minima, nostrum facilis deserunt praesentium reprehenderit reiciendis
+      quam blanditiis quaerat id similique suscipit error. Nemo! Modi,
+      laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Minima, nesciunt. Exercitationem impedit laborum dolor vitae officia quod
+      quis ullam! Dolorum! Maxime impedit ipsum, iste illo exercitationem dolore
+      est repellat quas. Tempore hic totam ratione. Ipsa ea nesciunt fuga unde
+      ullam. Temporibus porro laboriosam dolores optio facere reprehenderit
+      beatae, deserunt cupiditate! Reiciendis repudiandae hic totam ullam
+      repellendus earum maxime molestias voluptatum. Eum laborum, ducimus nam
+      natus nisi ratione? Dignissimos, nobis optio. Soluta iure autem
+      necessitatibus delectus distinctio quas aliquid nesciunt totam. Minima
+      amet sit animi voluptatem dignissimos delectus sapiente perferendis vero.
+      Voluptatum, voluptate ut odio fuga voluptatem tenetur harum quisquam
+      quidem.
+    </h2>
+    <div class="box-4">
+      box 4
+      <div class="box-5">box 5</div>
+    </div>
+    <h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae
+      exercitationem eveniet quam alias iure veniam tempora saepe nulla nobis
+      eligendi repudiandae molestias ex doloribus, quasi corrupti dicta?
+      Voluptate, autem. Eaque odio dicta voluptates accusamus perspiciatis ad
+      hic earum aut totam minima ea quaerat impedit deserunt necessitatibus,
+      laborum vero magni assumenda! Doloribus nisi eius aspernatur voluptate est
+      ex, maiores sapiente? Corporis quos, placeat ad repudiandae molestias
+      assumenda exercitationem et dolore voluptas temporibus obcaecati dolores
+      vero minima, nostrum facilis deserunt praesentium reprehenderit reiciendis
+      quam blanditiis quaerat id similique suscipit error. Nemo! Modi,
+      laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Minima, nesciunt. Exercitationem impedit laborum dolor vitae officia quod
+      quis ullam! Dolorum! Maxime impedit ipsum, iste illo exercitationem dolore
+      est repellat quas. Tempore hic totam ratione. Ipsa ea nesciunt fuga unde
+      ullam. Temporibus porro laboriosam dolores optio facere reprehenderit
+      beatae, deserunt cupiditate! Reiciendis repudiandae hic totam ullam
+      repellendus earum maxime molestias voluptatum. Eum laborum, ducimus nam
+      natus nisi ratione? Dignissimos, nobis optio. Soluta iure autem
+      necessitatibus delectus distinctio quas aliquid nesciunt totam. Minima
+      amet sit animi voluptatem dignissimos delectus sapiente perferendis vero.
+      Voluptatum, voluptate ut odio fuga voluptatem tenetur harum quisquam
+      quidem.
+    </h2>
+    <h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae
+      exercitationem eveniet quam alias iure veniam tempora saepe nulla nobis
+      eligendi repudiandae molestias ex doloribus, quasi corrupti dicta?
+      Voluptate, autem. Eaque odio dicta voluptates accusamus perspiciatis ad
+      hic earum aut totam minima ea quaerat impedit deserunt necessitatibus,
+      laborum vero magni assumenda! Doloribus nisi eius aspernatur voluptate est
+      ex, maiores sapiente? Corporis quos, placeat ad repudiandae molestias
+      assumenda exercitationem et dolore voluptas temporibus obcaecati dolores
+      vero minima, nostrum facilis deserunt praesentium reprehenderit reiciendis
+      quam blanditiis quaerat id similique suscipit error. Nemo! Modi,
+      laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Minima, nesciunt. Exercitationem impedit laborum dolor vitae officia quod
+      quis ullam! Dolorum! Maxime impedit ipsum, iste illo exercitationem dolore
+      est repellat quas. Tempore hic totam ratione. Ipsa ea nesciunt fuga unde
+      ullam. Temporibus porro laboriosam dolores optio facere reprehenderit
+      beatae, deserunt cupiditate! Reiciendis repudiandae hic totam ullam
+      repellendus earum maxime molestias voluptatum. Eum laborum, ducimus nam
+      natus nisi ratione? Dignissimos, nobis optio. Soluta iure autem
+      necessitatibus delectus distinctio quas aliquid nesciunt totam. Minima
+      amet sit animi voluptatem dignissimos delectus sapiente perferendis vero.
+      Voluptatum, voluptate ut odio fuga voluptatem tenetur harum quisquam
+      quidem.
+    </h2>
+    <div class="button-contact">Contact</div>
+  </body>
+</html>
