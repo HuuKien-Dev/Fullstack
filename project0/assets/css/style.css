@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --font-1: "Be Vietnam Pro", sans-serif;
+  --font-2: "Lora", serif;
+  --color-1: #333333;
+  --color-2: #e2e2e2;
+  --color-3: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/* Container */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End container */
+
+/* Box */
+.box {
+  background-color: var(--color-2);
+  border-radius: 8px;
+  font-family: var(--font-1);
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* End box */
+
+/* Title */
+.title {
+  width: 600px;
+  height: 80px;
+  margin-bottom: 40px;
+  font-family: var(--font-2);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End title */
+
+/* Header */
+.header {
+  padding: 20px;
+  background-color: var(--color-3);
+}
+
+header .inner-wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 200fr 820fr 120fr;
+  align-items: center;
+}
+header .inner-wrap .inner-logo {
+  height: 60px;
+}
+header .inner-wrap .inner-menu {
+  height: 34px;
+}
+header .inner-wrap .inner-button {
+  height: 42px;
+}
+/* End header */
+/* Section 1 */
+.section-1 {
+  background-color: var(--color-3);
+  padding: 80px;
+}
+.section-1 .inner-wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section-1 .inner-wrap,
+.section-1 .inner-image {
+  height: 520px;
+}
+/* End section 1 */
+
+/* Section 2 */
+.section-2 {
+  background-color: var(--color-3);
+  padding: 80px;
+}
+.section-2 .inner-wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.section-2 .inner-item {
+  height: 420px;
+}
+
+/* End section 2 */
+
+/* Section 3 */
+.section-3 {
+  background-color: var(--color-3);
+  padding: 80px 0;
+}
+.section-3 .inner-wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.section-3 .inner-item {
+  height: 300px;
+}
+/* End section 3 */
+
+/* Section 4 */
+.section-4 {
+  background-color: var(--color-3);
+  padding: 80px 0;
+}
+.section-4 .inner-wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.section-4 .inner-item {
+  height: 300px;
+}
+/* End section 4 */
+
+/* Footer */
+
+.footer {
+  margin-top: 80px;
+}
+
+/* End footer */
