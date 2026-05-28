@@ -1,0 +1,7 @@
+{
+  "name": "yarn",
+  "packageManager": "yarn@4.12.0",
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
