@@ -1,0 +1,10 @@
+{
+  "name": "hoc_pug",
+  "packageManager": "yarn@4.12.0",
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "start": "pug -w ./views/pages -o ./ -P"
+  }
+}
